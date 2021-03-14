@@ -1,0 +1,473 @@
+body
+{ 
+	background-color: #FFFFFF !Important;
+}
+
+.button1
+{
+	margin-top: 15px;
+	height: 100px;
+	width: 400px;
+	border-radius: 5px;
+	background-color: #003153;
+	border: 2px solid #003153;
+	color: white;
+	font-size: 30px;
+	font-family: Cambria;
+}
+
+.button1:hover
+{
+	background-color: Black;
+    color: white;	
+}
+
+.button2
+{
+	margin-top: 10px;
+	height: 30px;
+	width: 250px;
+	border-radius: 5px;
+	background-color: #003153;
+	border: 2px solid #003153;
+	color: white;
+	font-size: 18px;
+	font-family: Cambria;
+}
+
+.button2:hover
+{
+	background-color: Black;
+    color: white;	
+}
+
+.button3
+{
+	height: 15%;
+	width: 27%;
+	border-radius: 5px;
+	background-color: #003153;
+	border: 2px solid #003153;
+	color: white;
+	font-size: 18px;
+	font-family: Cambria;
+}
+
+.button3:hover
+{
+	background-color: white;
+    color: black;	
+}
+
+.button4
+{
+	height: 26px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #003153;
+	border: 2px solid #003153;
+	color: white;
+	font-size: 18px;
+	font-family: Cambria;
+}
+
+.button4:hover
+{
+	background-color: white;
+    color: black;	
+}
+
+.input1
+{
+	padding-left: 10px; 
+	height: 35px; 
+	width: 250px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-family: Cambria;
+	font-size: 18px;
+	color: #353535;
+}
+
+.input2
+{
+	padding-left: 10px; 
+	height: 35px; 
+	width: 180px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-family: Cambria;
+	font-size: 18px;
+	color: #353535;
+}
+
+.input3
+{
+	padding-left: 10px; 
+	height: 26px; 
+	width: 180px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	font-family: Cambria;
+	font-size: 16px;
+	color: #353535;
+}
+
+.menu 
+{
+    background-color: #003153;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.menu a 
+{
+	background-color: #003153;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-family: Cambria;
+}
+
+/* Change the color of links on hover */
+.menu a:hover 
+{
+    background-color: black;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.menu a.active 
+{
+    background-color: black;
+    color: white;
+}
+
+/* Table */
+.data-table {
+	border-collapse: collapse;
+	font-size: 20px;
+	min-width: 537px;
+	font-family: Cambria;
+}
+
+.data-table th, 
+.data-table td {
+	border: 1px solid #003153;
+	padding: 7px 17px;
+}
+
+/* Table Header */
+.data-table thead th {
+	background-color: #003153;
+	color: white;
+	border-color: black !important;
+	text-transform: uppercase;
+}
+
+/* Table Body */
+.data-table tbody td {
+	color: #353535;
+	font-family: Cambria;
+	font-size: 18px;
+	text-align: center;
+}
+
+.data-table tbody tr:hover td {
+	background-color: gray;
+	border-color: black;
+	color:white;
+}
+
+/* Table2 */
+.data-table2 {
+	border-collapse: collapse;
+	font-size: 16px;
+	min-width: 40%;
+	font-family: Cambria;
+}
+
+.data-table2 th, 
+.data-table2 td {
+	border: 1px solid #003153;
+	padding: 7px 17px;
+}
+
+/* Table Header */
+.data-table2 thead th {
+	background-color: #003153;
+	color: white;
+	border-color: black !important;
+	text-transform: capitalize;
+}
+
+/* Table Body */
+.data-table2 tbody td {
+	color: #353535;
+	font-family: Cambria;
+	font-size: 16px;
+	text-align: center;
+}
+
+.data-table2 tbody tr:hover td {
+	background-color: gray;
+	border-color: black;
+	color:white;
+}
+
+.view
+{
+	background-color: black;
+	float: left;
+    display: block;
+	color: white;
+	height: 25px;
+	width: 80px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.view:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: black;
+}
+
+.vol
+{
+	background-color: #003153;
+	color: white;
+	height: 25px;
+	width: 76px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid #003153;
+}
+
+.vol:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: #003153;
+}
+
+.wdraw
+{
+	background-color: #641e16;
+	color: white;
+	height: 25px;
+	width: 76px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid #641e16;
+}
+
+.wdraw:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: #641e16;
+}
+
+.page
+{
+	background-color: black;
+	float: left;
+    display: block;
+	color: white;
+	height: 25px;
+	width: 50px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.page:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: black;
+}
+
+.edit 
+{
+	background-color: #145a32;
+	float: left;
+    display: block;
+	color: white;
+	height: 25px;
+	width: 60px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid #145a32;
+}
+
+.edit:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: #145a32;
+}
+
+.del 
+{
+	background-color: #641e16;
+	float: left;
+    display: block;
+	color: white;
+	height: 25px;
+	width: 60px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid  #641e16 ;
+}
+
+.del:hover 
+{
+    background-color: white;
+	color: black;
+	border-color:  #641e16 ;
+}
+
+.inv 
+{
+	background-color: black;
+	float: left;
+	display: block;
+	color: white;
+	height: 25px;
+	width: 93%;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.inv:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: black;
+}
+
+.post
+{
+	width: 100%;
+	margin: 5px auto; 
+	color: black;
+}
+
+.div
+{
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 3px solid #003153;
+	border-radius: 5px; 
+	margin: 4px 2px;
+	text-align: left;
+} 
+
+h1, h2, h3, h4, h5, h6 {color: #353535;}
+
+
+.increase
+{
+	background-color: #145a32;
+	color: white;
+	height: 18px;
+	width: 80px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid #145a32;
+}
+
+.increase:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: #145a32;
+}
+
+.decrease
+{
+	background-color:  #641e16;
+	color: white;
+	height: 18px;
+	width: 80px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid  #641e16;
+}
+
+.decrease:hover 
+{
+    background-color: white;
+	color: black;
+	border-color:  #641e16;
+}
+
+.idel
+{
+	background-color: black;
+	color: white;
+	height: 20px;
+	width: 80px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Cambria;
+	margin-right: 2px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.idel:hover 
+{
+    background-color: white;
+	color: black;
+	border-color: black;
+}

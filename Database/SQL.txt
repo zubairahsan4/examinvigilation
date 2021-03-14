@@ -1,0 +1,80 @@
+CREATE TABLE examdepartment
+(EDID INT NOT NULL AUTO_INCREMENT,
+Username VARCHAR(50),
+Keyword VARCHAR(255),
+PRIMARY KEY (EDID)
+);
+
+Insert into examdepartment (username, keyword) values ('admin', 'admin')
+
+CREATE TABLE hrdepartment
+(HRID INT NOT NULL AUTO_INCREMENT,
+Username VARCHAR(50),
+Keyword VARCHAR(255),
+PRIMARY KEY (HRID)
+);
+
+Insert into hrdepartment (username, keyword) values ('hradmin', 'hradmin')
+
+CREATE TABLE lecturer
+(Lecturer_ID INT NOT NULL AUTO_INCREMENT,
+Name VARCHAR (255),
+Department VARCHAR (255),
+Username VARCHAR(50),
+Keyword VARCHAR(255),
+Email VARCHAR (50),
+Phone VARCHAR (255),
+Pin VARCHAR (5),
+Active BOOLEAN DEFAULT 0,
+PRIMARY KEY (Lecturer_ID)
+);
+
+CREATE TABLE timetable
+(ID INT NOT NULL AUTO_INCREMENT,
+Image_path VARCHAR(255),
+Image_name VARCHAR(255),
+Lecturer_ID INT,
+PRIMARY KEY (ID),
+CONSTRAINT FOREIGN KEY (Lecturer_ID) REFERENCES lecturer(Lecturer_ID) ON DELETE CASCADE
+);
+
+CREATE TABLE diet
+(Diet_ID INT NOT NULL AUTO_INCREMENT,
+ExamDiet VARCHAR (255),
+StartDate VARCHAR (255),
+EndDate VARCHAR(255),
+EDID INT,
+PRIMARY KEY (Diet_ID),
+FOREIGN KEY (EDID) REFERENCES examdepartment(EDID)
+);
+
+CREATE TABLE exam
+(Exam_ID INT NOT NULL AUTO_INCREMENT,
+ Diet_ID INT,
+Programme VARCHAR (255),
+ CourseName VARCHAR (255),
+ TaughtBy VARCHAR (255),
+ NStudents INT,
+Session_ID INT,
+ PRIMARY KEY (Exam_ID),
+FOREIGN KEY (Session_ID) REFERENCES datesession(Session_ID),
+CONSTRAINT FOREIGN KEY (Diet_ID) REFERENCES diet(Diet_ID) ON DELETE CASCADE
+);
+
+CREATE TABLE datesession
+(Session_ID INT NOT NULL AUTO_INCREMENT,
+ExamDate VARCHAR(255), 
+ExamSession VARCHAR(255),
+ InvReq INT DEFAULT 0,
+ InvAss INT DEFAULT 0,
+PRIMARY KEY (Session_ID)
+);
+
+CREATE TABLE invigilator
+(I_ID INT NOT NULL AUTO_INCREMENT,
+ Session_ID INT,
+ Lecturer_ID INT,
+ PRIMARY KEY (I_ID),
+CONSTRAINT FOREIGN KEY (Lecturer_ID) REFERENCES lecturer(Lecturer_ID) ON DELETE CASCADE,
+CONSTRAINT FOREIGN KEY (Session_ID) REFERENCES datesession(Session_ID) ON DELETE CASCADE
+);
